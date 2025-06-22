@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bus veruda-štinjan</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 30px;
+      font-family: sans-serif;
+    }
+
+    .columns {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .bus-img {
+      height: 700px; /* Bigger image */
+      width: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 15px;
+    }
+
+    .dropdown, .dropdown2, .dropdown3, .dropdown4 {
+      position: relative;
+      display: inline-block;
+    }
+
+    button {
+      background-color: hsl(0, 0%, 47%);
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    button:hover {
+      background-color: orangered;
+    }
+
+    .content {
+      display: none;
+      background-color: hsl(0, 0%, 93%);
+      position: absolute;
+      min-width: 250px;
+      box-shadow: 2px 3px 5px hsla(0, 0%, 0%, 0.8);
+      z-index: 1;
+    }
+
+    .dropdown:hover .content,
+    .dropdown2:hover .content,
+    .dropdown3:hover .content,
+    .dropdown4:hover .content {
+      display: block;
+    }
+
+    .content a {
+      display: block;
+      padding: 10px;
+      color: black;
+      text-decoration: none;
+    }
+
+    .content a:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="columns">
+    
+    <!-- LEFT COLUMN -->
+    <div class="column">
+      <div class="dropdown">
+        <img src="bus.png" alt="Bus za Štinjan" class="bus-img">
+      </div>
+      <div class="dropdown2">
+        <button>upute</button>
+        <div class="content">
+          <a href="">probudi se u 6 :D</a>
+          <a href="">kreni prema zlatnim vratima u 9:40 (ne zaboravi karticu!)</a>
+          <a href="">kada dođeš do zlatnih vrata kreni do A1 gdje je stanica za bus</a>
+          <a href="">bus dolazi u 10:30 pa malo pričekaj da dođe :D</a>
+          <a href="">siđi na stanici štinjan-placa A ili baližerka 2-A</a>
+          <a href="">kada stigneš kreni prema babi :D</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="column">
+      <div class="dropdown3">
+        <img src="busdoma.png" alt="Bus nazad" class="bus-img">
+      </div>
+      <div class="dropdown4">
+        <button>kako nazad?</button>
+        <div class="content">
+          <a href="">bus nazad dolazi u 17:46 kreni u 17:20 do place</a>
+          <a href="">kada dođeš do A1...</a>
+          <a href="">kreni prema verudi :D</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
